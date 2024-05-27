@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Item from "./Item";
+import Filter from "./Filter";//passed from parent component
+import itemData from '../data/items'; //routed from 'App' component
 
 function ShoppingList({ items }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
